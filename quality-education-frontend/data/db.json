@@ -1,0 +1,28 @@
+{
+  "articles": [
+    {
+      "id": 0,
+      "title": "MICROSOFT WORD",
+      "author": "Wike",
+      "body": "Lorem ipsum mmmmmmmmmmmmmmmmmm jcccccccccccccccccc dhhhhhhhhhh  sssssssdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"
+    },
+    {
+      "id": 1,
+      "title": "MICROSOFT EXCEL",
+      "author": "Dare",
+      "body": "Lorem ipsum mmmmmmmmmmmmmmmmmm jcccccccccccccccccc dhhhhhhhhhh"
+    },
+    {
+      "id": 2,
+      "title": "MICROSOFT POWERPOINT",
+      "author": "Ada",
+      "body": "Lorem ipsum mmmmmmmmmmmmmmmmmm jcccccccccccccccccc dhhhhhhhhhh"
+    },
+    {
+      "id": 2,
+      "title": "COREL DRAW",
+      "author": "Ada",
+      "body": "Lorem ipsum mmmmmmmmmmmmmmmmmm jcccccccccccccccccc dhhhhhhhhhh"
+    }  
+  ]
+}

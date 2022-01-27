@@ -1,38 +1,224 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* NAVBAR */
+.navbar-nav a{
+  font-size: 18px;
+}
+.navbar-fixed{
+  top: 0;
+  z-index: 100;
+position: fixed;
+  width: 100%;
+}
+/* CAROUSEL */
+.carousel .carousel-item {
+  height: 600px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.carousel-item img {
+    position: absolute;
+    object-fit:cover;
+    top: 0;
+    left: 0;
+    min-height: 600px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* CAROUSEL BUTTON */
+.classic_button_view{ position: absolute; left: 550px; top: 400px; }
+.classic_button_apply { position: absolute; left: 700px; top: 400px; }
+
+/* COURSE course_card */
+
+.foot_card{
+  float: right;
+  margin-top: 300px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+ p {
+    margin: 0px
+} 
+
+.course_card {
+    width: 280px;
+    height: 500px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background: #fff;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    user-select: none;
+    z-index: 10;
+    overflow: hidden;
+     float: right; 
+     margin-top: 0px;
+    
+}
+
+.course_card .backgroundEffect {
+    bottom: 0;
+    height: 0px;
+    width: 100%
+}
+
+.course_card:hover {
+    color: #fff;
+    transform: scale(1.025);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 5px 10px
+}
+
+.course_card:hover .backgroundEffect {
+    bottom: 0;
+    height: 320px;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    background: #1b9ce3;
+    animation: popBackground 0.3s ease-in
+}
+
+@keyframes popBackground {
+    0% {
+        height: 20px;
+        border-top-left-radius: 50%;
+        border-top-right-radius: 50%
+    }
+
+    50% {
+        height: 80px;
+        border-top-left-radius: 75%;
+        border-top-right-radius: 75%
+    }
+
+    75% {
+        height: 160px;
+        border-top-left-radius: 85%;
+        border-top-right-radius: 85%
+    }
+
+    100% {
+        height: 320px;
+        border-top-left-radius: 100%;
+        border-top-right-radius: 100%
+    }
+}
+
+.course_card .pic {
+    position: relative
+}
+
+.course_card .pic img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover
+}
+
+
+
+
+.course_card .text-muted {
+    font-size: 12px
+   
+}
+
+.course_card:hover .text-muted {
+    color: #fff !important
+}
+
+.course_card .content {
+    padding: 0 20px
+}
+
+.course_card .content .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 10px;
+    background-color: #1b9ce3;
+    border-radius: 25px;
+    font-size: 12px;
+    border: none
+}
+
+.course_card:hover .content .btn {
+    background: #fff;
+    color: #1b9ce3;
+    box-shadow: #0000001a 0px 3px 5px
+}
+
+.course_card .content .btn .fas {
+    font-size: 10px;
+    padding-left: 5px
+}
+
+.course_card .content .foot .admin {
+    color: #1b9ce3;
+    font-size: 12px
+}
+
+.course_card:hover .content .foot .admin {
+    color: #fff
+}
+
+.course_card .content .foot .icon {
+    font-size: 12px
+}
+
+
+
+
+/* SOCIAL */
+.social {
+  list-style: none;
+  display: flex
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
   display: flex;
-  flex-direction: column;
+  justify-content: right;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+  cursor: pointer
 }
 
-.App-link {
-  color: #61dafb;
+.social-twitter {
+  background-color: #55acee
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.social-facebook {
+  background-color: #3b5999
+}
+
+.social-linkedin {
+  background-color: #0077B5
+}
+
+.social-google {
+  background-color: #dd4b39
+}
+
+.social-instagram {
+  background-color: #dd4b39
+}
+
+.social-icon i {
+  transition: 0.4s all
+}
+
+.social-icon:hover i {
+  transform: scale(1.4)
+}
+
+/* FOOTER */
+.card-text{
+  font-size: 15px;
+}
+.card .nav-link{
+  font-size: 13px;
+}
+.foot_card{
+  background: #110202da;
 }
