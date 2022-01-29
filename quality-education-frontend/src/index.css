@@ -1,13 +1,280 @@
-body {
+@import url("https://fonts.googleapis.com/css?family=Nova+Slim&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Russo+One&display=swap");
+
+/* CUSTOM DEF STYLE */
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family:'Poppins';
+  font-weight: 'SemiBold';
+  opacity: 1;
+  
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* NAVBAR */
+.navbar-nav a{
+  font-size: 18px;
+}
+.navbar-fixed{
+  top: 0;
+  z-index: 100;
+  position:fixed;
+  width: 100%;
+}
+ 
+/* 
+.navbar {
+  display: flex;
+  max-width: 1300px;
+  font-size: 20px;
+  font-weight: bold ;
+  margin: 10px auto;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 1px solid #f2f2f2;
+  
+}
+
+.navbar h1 {
+  margin-right: 100px;
+  color: #41a038;
+  font-weight: bold;
+  opacity: 1;
+  font-size: 35px;
+  font-family: 'Russio One';
+}
+
+.navbar a { 
+  display: inline-block;
+  padding: 10px 85px;
+  text-decoration: none;
+  border-radius: 50px;
+}
+
+.navbar a:hover {
+  background-color: #41a038;
+
+} */
+
+/* LOGIN -- H1 COMPONENT */
+.containerrr h1 {
+  font-family: 'Nova Slim';
+  /* text-align:right; */
+  /* width: 90%; */
+  /* padding-top: 30px; */
+  color: white;
+  padding-bottom: 10px;
+  position: relative;
+  font-weight: 400;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.37);
+  margin-left: 59%;
+  width: 32%;
+
+}
+
+/* LOGIN -- H1 TEXT DECORATION STYLE */
+.containerrr h1::after{
+  content: '';
+  height: 5px;
+  /* width: 19%; */
+  position:absolute;
+  background:rgb(255, 196, 0);
+  /* left: 910px; */
+  padding-bottom: 4px;
+  bottom: 0;
+  right: 25%;
+  width: 50%;
+  
+
+}
+
+/* TAKE A COURSE TODAY */
+.shop{
+  width: 50%;
+  float: left;
+  text-align: center;
+  font-size: 80px;
+  font-weight: bold;
+  color:rgb(17, 101, 255);
+  font-family: 'Russio One';
+  margin-top: 30px;
+}
+
+/* LOGIN -- FORM BOX */
+.form {
+  background-color: rgba(0, 0, 0, 0.5);
+  max-width: 400px;
+  text-align:center;
+  margin: 0 auto;
+  margin-right: 11%;
+  padding: 20px;
+  /* padding-left: 650px; */
+}
+
+/* LOGIN -- FORM LABEL */
+.form label {
+  text-align: left;
+  display: block;
+  color: white;
+  /* color: rgb(0, 0, 0); */
+  /* background-color: rgb(245, 245, 245); */
+  /* max-width: 24%; */
+}
+
+/* LOGIN FORM TEXTAREA, INPUT AND SELECT */
+.form input, textarea, select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  display:block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-sizing:border-box;
+}
+
+/* LOGIN -- FORM BUTTON */
+.form button {
+  padding: 10px;
+  background-color: rgb(49, 49, 255);
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-size: medium;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* ERROR MESSAGE [ALL COMPONENT] */
+.error-msg {
+  color: red;
+  text-align: center;
+}
+
+/* LOGIN -- DONT HAVE AN ACCOUNT */
+.dont-have {
+  margin-top: 80px;
+}
+
+/* REGISTER -- ALREADY HAVE AN ACCOUNT */
+.dont-have-r{
+  color: white;
+  margin-top: 15px;
+}
+
+/* REGISTER -- H1 COMPONENT */
+.containers h1 {
+  font-family: 'Nova Slim';
+  text-align:center;
+  width: 32%;
+  margin-left: 34%;
+  /* padding-top: 5px; */
+  /* color: black; */
+  color: white;
+  position: relative;
+  padding-bottom: 10px;
+  font-weight:lighter;
+  background-color: rgba(0, 0, 0, 0.295);
+
+}
+
+/* REGISTER -- H1 TEXT DECORATION STYLE */
+.containers h1::after{
+  content: '';
+  height: 5px;
+  /* width: 16%; */
+  position:absolute;
+  background: rgb(255, 196, 0);
+  /* left: 600px; */
+  padding-bottom: 4px;
+  bottom: 0;
+  right: 25%;
+  width: 50%;
+
+}
+
+/* REGISTER -- FORM BOX */
+.forms {
+  background-color: rgba(0, 0, 0, 0.4);
+  max-width: 400px;
+  text-align:center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* REGISTER -- FORM LABEL */
+.forms label {
+  text-align: left;
+  display: block;
+  color: white;
+}
+
+/* REGISTER -- FORM TEXTAREA, INPUT AND SELECT */
+.forms input, textarea, select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  display:block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-sizing:border-box;
+}
+
+/* REGISTER -- FORM BUTTON */
+.forms button {
+  padding: 10px;
+  background-color: rgb(49, 49, 255);
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-size: medium;
+  margin-top: 10px;
+  width: 100%;
+}
+
+/* REGISTER CONTAINER */
+.containerr {
+text-align: center;
+margin-top: 10%;
+}
+
+/* FORGOT PASSWORD -- FORM */
+.formm {
+  max-width: 400px;
+  text-align:center;
+  margin: 0 auto;
+  padding-top: 15px;
+}
+
+/* FORGOT PASSWORD -- FORM LABEL */
+.formm label {
+  text-align: left;
+  display: block;
+  color: rgb(0, 0, 0);
+}
+
+/* FORGOT PASSWORD -- TEXTAREA, INPUT AND SELECT */
+.formm input, textarea, select {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  display:block;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 5px;
+  box-sizing:border-box;
+}
+
+/* FORGOT PASSWORD -- BUTTON */
+.formm button {
+  padding: 10px;
+  background-color: rgb(49, 49, 255);
+  color: #fff;
+  border-radius: 8px;
+  border: 0;
+  cursor: pointer;
+  font-size: medium;
+  margin-top: 10px;
+  width: 100%;
 }
