@@ -20,6 +20,7 @@
   z-index: 100;
   position:fixed;
   width: 100%;
+  
 }
  
 /* 
@@ -55,35 +56,44 @@
   background-color: #41a038;
 
 } */
-
+.content{
+  background-color: rgba(218, 216, 214, 0.39);
+}
+.containerrr{
+    max-width: 500px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: white;
+    /* background-color: rgba(0, 0, 0, 0.014); */
+  }
+  
 /* LOGIN -- H1 COMPONENT */
 .containerrr h1 {
-  font-family: 'Nova Slim';
+  font-family: 'Russio One';
   /* text-align:right; */
   /* width: 90%; */
   /* padding-top: 30px; */
-  color: white;
+  color: black;
   padding-bottom: 10px;
   position: relative;
   font-weight: 400;
   font-size: 40px;
-  background-color: rgba(0, 0, 0, 0.37);
-  margin-left: 59%;
-  width: 32%;
+  margin-left: 36%;
+  width: 48%;
 
 }
 
 /* LOGIN -- H1 TEXT DECORATION STYLE */
 .containerrr h1::after{
   content: '';
-  height: 5px;
+  height: 10px;
   /* width: 19%; */
   position:absolute;
   background:rgb(255, 196, 0);
   /* left: 910px; */
   padding-bottom: 4px;
   bottom: 0;
-  right: 25%;
+  right: 50%;
   width: 50%;
   
 
@@ -93,21 +103,44 @@
 .shop{
   width: 50%;
   float: left;
+  /* background-color: rgb(223, 17, 17); */
   text-align: center;
-  font-size: 80px;
+  font-size: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
   font-weight: bold;
-  color:rgb(17, 101, 255);
+  color:#164794;
   font-family: 'Russio One';
-  margin-top: 30px;
+  margin-top: 56px;
+  /* margin-bottom: 10%; */
+  padding-top: 40%;
+  padding-bottom: 5%;
+}
+
+.sho{
+  width: 50%;
+  float: left;
+  background-color: rgba(255, 255, 255, 0.288);
+  /* filter: blur(1px); */
+  text-align: center;
+  font-size: 100px;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: bold;
+  color:#164794;
+  font-family: 'Russio One';
+  /* margin-top: 10%;
+  margin-bottom: 10%; */
+  padding-top: 10%;
+  padding-bottom: 10%;
 }
 
 /* LOGIN -- FORM BOX */
 .form {
-  background-color: rgba(0, 0, 0, 0.5);
-  max-width: 400px;
+  max-width: 450px;
   text-align:center;
   margin: 0 auto;
-  margin-right: 11%;
+  /* margin-right: 11%; */
   padding: 20px;
   /* padding-left: 650px; */
 }
@@ -116,7 +149,8 @@
 .form label {
   text-align: left;
   display: block;
-  color: white;
+  font-weight: 900;
+  color: rgb(165, 165, 165);
   /* color: rgb(0, 0, 0); */
   /* background-color: rgb(245, 245, 245); */
   /* max-width: 24%; */
@@ -128,15 +162,17 @@
   margin: 10px 0;
   padding: 10px;
   display:block;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px whitesmoke;
+  /* border: 1px solid rgb(0, 0, 0); */
   border-radius: 5px;
   box-sizing:border-box;
+  background-color: whitesmoke;
 }
 
 /* LOGIN -- FORM BUTTON */
 .form button {
   padding: 10px;
-  background-color: rgb(49, 49, 255);
+  background-color: #164794;
   color: #fff;
   border-radius: 8px;
   border: 0;
@@ -154,50 +190,58 @@
 
 /* LOGIN -- DONT HAVE AN ACCOUNT */
 .dont-have {
-  margin-top: 80px;
+  margin-top: 20px;
 }
 
 /* REGISTER -- ALREADY HAVE AN ACCOUNT */
 .dont-have-r{
-  color: white;
+  color: black;
   margin-top: 15px;
+}
+
+.containers{
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
 }
 
 /* REGISTER -- H1 COMPONENT */
 .containers h1 {
-  font-family: 'Nova Slim';
+  font-family: 'Russio One';
   text-align:center;
   width: 32%;
   margin-left: 34%;
   /* padding-top: 5px; */
   /* color: black; */
-  color: white;
+  color: black;
   position: relative;
   padding-bottom: 10px;
   font-weight:lighter;
-  background-color: rgba(0, 0, 0, 0.295);
+  /* background-color: rgba(0, 0, 0, 0.295); */
 
 }
 
 /* REGISTER -- H1 TEXT DECORATION STYLE */
 .containers h1::after{
   content: '';
-  height: 5px;
+  height: 10px;
   /* width: 16%; */
   position:absolute;
   background: rgb(255, 196, 0);
   /* left: 600px; */
   padding-bottom: 4px;
   bottom: 0;
-  right: 25%;
-  width: 50%;
+  right: 10%;
+  width: 80%;
 
 }
 
 /* REGISTER -- FORM BOX */
 .forms {
-  background-color: rgba(0, 0, 0, 0.4);
-  max-width: 400px;
+  /* background-color: rgba(0, 0, 0, 0.4); */
+  max-width: 450px;
   text-align:center;
   margin: 0 auto;
   padding: 20px;
@@ -207,7 +251,8 @@
 .forms label {
   text-align: left;
   display: block;
-  color: white;
+  font-weight: 900;
+  color: rgb(165, 165, 165);
 }
 
 /* REGISTER -- FORM TEXTAREA, INPUT AND SELECT */
@@ -216,15 +261,17 @@
   margin: 10px 0;
   padding: 10px;
   display:block;
-  border: 1px solid rgb(0, 0, 0);
+  border: 1px whitesmoke;
+  /* border: 1px solid rgb(0, 0, 0); */
   border-radius: 5px;
   box-sizing:border-box;
+  background-color: whitesmoke;
 }
 
 /* REGISTER -- FORM BUTTON */
 .forms button {
   padding: 10px;
-  background-color: rgb(49, 49, 255);
+  background-color: #164794;
   color: #fff;
   border-radius: 8px;
   border: 0;
@@ -234,11 +281,15 @@
   width: 100%;
 }
 
-/* REGISTER CONTAINER */
-.containerr {
-text-align: center;
-margin-top: 10%;
+
+.containerr{
+  max-width: 500px;
+  margin: 10px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: white;
 }
+
 
 /* FORGOT PASSWORD -- FORM */
 .formm {
@@ -269,7 +320,7 @@ margin-top: 10%;
 /* FORGOT PASSWORD -- BUTTON */
 .formm button {
   padding: 10px;
-  background-color: rgb(49, 49, 255);
+  background-color: #164794;
   color: #fff;
   border-radius: 8px;
   border: 0;
@@ -277,4 +328,102 @@ margin-top: 10%;
   font-size: medium;
   margin-top: 10px;
   width: 100%;
+}
+
+.carousel-caption{
+  position: absolute;
+  top: 0;
+  bottom: auto;
+  margin-top: 10%;
+  margin-right: 35%;
+  font-weight: 900;
+}
+
+.getting {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.getting p {
+  width: 70%;
+  line-height: 1.5rem;
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+}
+.getting a {
+  margin-bottom: 7rem;
+}
+
+.getting-bn button {
+  padding: 10px;
+  background-color: rgb(255, 196, 0);
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  font-size: medium;
+  margin-top: 10px;
+  width: 250px;
+}
+
+/* FOOTER */
+.card-text{
+  font-size: 15px;
+}
+.card .nav-link{
+  font-size: 13px;
+}
+.foot_card{
+  background: #110202da;
+}
+
+
+/* SOCIAL */
+.social {
+  list-style: none;
+  display: flex
+}
+
+.social-icon {
+  height: 20px;
+  width: 20px;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  color: #fff;
+  font-size: 12px;
+  margin-right: 20px;
+  cursor: pointer
+}
+
+.social-twitter {
+  background-color: #55acee
+}
+
+.social-facebook {
+  background-color: #3b5999
+}
+
+.social-linkedin {
+  background-color: #0077B5
+}
+
+.social-google {
+  background-color: #dd4b39
+}
+
+.social-instagram {
+  background-color: #dd4b39
+}
+
+.social-icon i {
+  transition: 0.4s all
+}
+
+.social-icon:hover i {
+  transform: scale(1.4)
 }

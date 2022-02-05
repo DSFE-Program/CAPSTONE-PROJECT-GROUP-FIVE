@@ -14,9 +14,9 @@ const Register = () => {
     }
 
     return (
-        <div className="containers" style={{backgroundImage: "url(/bk-3.png)", backgroundSize: "cover"}}>
-            <br/> <br/> <br/> <br/>
-            <h1>WELCOME TO TECSPIK</h1>
+        <div><br/><br/> <br/><br/> 
+        <div className="containers">
+            <h1>Sign up</h1>
             <form onSubmit={handleSubmit} className="forms">
                 <label>Full Name:</label>
                 <input
@@ -55,7 +55,7 @@ const Register = () => {
                 />
                 
                 <label>Gender:</label>
-                <select
+                <select style={{border: "1px whitesmoke"}}
                         value={gender}
                         required
                         onChange = {(e) => setGender(e.target.value)}>
@@ -65,11 +65,13 @@ const Register = () => {
                     <option value= "other">other</option>
                 </select>
             
-                <button>Register</button>
+                <button>Sign up</button>
 
-                <p className="dont-have-r">Already have an account? <Link to="/" style={{textDecoration: "none", color: "blueviolet"}}>Login here...</Link> </p>
+                <p className="dont-have-r">Already have an account? <Link to="/login" style={{textDecoration: "none", color: "blueviolet"}}>Sign in...</Link> </p>
             </form>
         </div>
+        <br />
+        </div>  
     );
 }
  

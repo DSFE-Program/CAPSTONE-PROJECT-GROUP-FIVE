@@ -19,12 +19,12 @@ const Login = () => {
     }
 
     return (
-        <div className="containerrr" style={{backgroundImage: "url(/background.png)", backgroundSize: "cover"}}>
+        <div><br/><br/> <br/><br/> 
+        <div className="containerrr">
             { isAuth && <Navigate to="/home" /> }
             { !isAuth && localStorage.clear('auth')}
-            <br/> <br/><br/> <br/>
-            <h1>WELCOME TO TECSPIK</h1>
-            <div className="shop">Take a Course Today!</div>
+            <h1>Sign in</h1>
+            {/* <div className="shop">Take a Course Today!</div> */}
             <p className="error-msg">{ error }</p>
             <div className="form" >
                 <form onSubmit={ handleSubmit(onSubmit) }>
@@ -40,19 +40,23 @@ const Login = () => {
                         { ...register("password", { required: true ,minLength:6})}
                     />
                     { errors.password && <p className="error-msg">password is required</p>}
-                    <button>Continue</button>
+
+
+                    <p><Link to="/forgot" style={{textDecoration: "none", color: "blueviolet"}}>Forgot Password?</Link></p>
+                    <button>Sign in</button>
 
                 </form>
                 
                 <div className="dont-have">
-                    <p style={{textDecoration: "none", color: "white"}}>Forgot Password?<Link to="/forgot" style={{textDecoration: "none", color: "blueviolet"}}> Reset here</Link></p>
-                    <br/>
-                    <p style={{textDecoration: "none", color: "white"}}>Don't have an account?<Link to="/register" style={{textDecoration: "none", color: "blueviolet"}}> Register here</Link></p>
+                   
+                   
+                    <p>Don't have an account?<Link to="/register" style={{textDecoration: "none", color: "blueviolet"}}> Sign up</Link></p>
                 </div>
                 <br />
             </div> 
-             <br /> <br /><br /><br /><br />
-        </div>   
+        </div> 
+        <br /> <br /><br /><br /><br />
+        </div>  
     );
 }
  
