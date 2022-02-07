@@ -9,6 +9,7 @@
   z-index: 100;
 position: fixed;
   width: 100%;
+  background-color: #141850;
 }
 /* CAROUSEL */
 .carousel .carousel-item {
@@ -32,9 +33,52 @@ position: fixed;
 .foot_card{
   float: right;
   margin-top: 300px;
+ 
 }
-
-
+ .mission{
+  background-color: #141850;
+}
+.cmt{
+  margin-left: 100px;
+  margin-right: 200px;
+  margin-top: 100px;
+}
+.bld{
+  margin-top: 200px;
+}
+.crs{
+  margin: 50px;
+}
+/* .sdb{
+  margin: 200px;
+}
+ */
+ /* .sdb {
+    height: 100%;
+    width: 300px;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0px;
+    float: right;
+    margin-top: 100px;
+    padding-top: 40px;
+    background-color: rgb(243, 243, 239);
+    }
+    
+    .sdb div {
+    padding: 8px;
+    font-size: 16px;
+    display: block;
+    }
+    
+    .sdb-text {
+    margin-right: 150px;
+    font-size: 10px;
+    }
+    .blkc{
+      margin-top: 300px;
+    } */
+ 
  p {
     margin: 0px
 } 

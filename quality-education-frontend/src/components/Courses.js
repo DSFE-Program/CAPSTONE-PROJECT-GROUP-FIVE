@@ -2,7 +2,7 @@ import React from "react";
 
 
 
-const Courses = ({ articles, titles, handleDelete }) => {
+const Courses = ({ articles }) => {
 
     return (
         <div>
@@ -24,11 +24,11 @@ const Courses = ({ articles, titles, handleDelete }) => {
                     <div>
 
                         {/* course_card STARTS */}
-                        <div key={article.id} className=' course_card col-md-3 mb-4 ' >
-                            <div class="d-lg-flex   card h-100 text-center p-4 ">
+                        <div key={article.id} className=' course_card col-md-3 mb-4 crs' >
+                            <div class="d-sm-flex   card h-100 text-center p-4 ">
                                 <div class="course_card border-0 me-lg-4 mb-lg-0 mb-4">
                                     <div class="backgroundEffect"></div>
-                                    <div class="pic">   <img class="" src="./assets/ms-word.jpg" alt="" />
+                                    <div class="pic">   <img class="" src="./assets/elearning.jpeg"  alt="" />
                                         <p class="h-1 mt-4">{article.title} </p>
                                         <p class="text-muted text-truncate mt-3 ">{article.body}</p>
                                         <div class="d-flex align-items-center justify-content-between mt-3 pb-3">

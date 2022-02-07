@@ -1,25 +1,17 @@
-import React from 'react'
-import Corousel from './Corousel';
+import React from 'react';
 import useFetch from './Fetch';
-import Courses from './Courses';
+import LatestNews from './LatestNews';
 
-
-const Home = () => {
-
+function SideBar() {
     const { data: articles, loading, error } = useFetch('http://localhost:8000/articles')
-
 
     return (
         <div className='hero'>
-            <Corousel />
             {loading && <p>Loading......</p>}
             {error && <p>{error}</p>}
-            {articles && <Courses articles={articles} title={"All Articles!"} />}
-
+            <div>{articles && <LatestNews articles={articles} title={"All Articles!"} />}  </div>
         </div>
     )
 }
 
-
-export default Home;
-
+export default SideBar;

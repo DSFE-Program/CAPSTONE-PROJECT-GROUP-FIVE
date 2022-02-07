@@ -4,23 +4,22 @@ import { Link } from 'react-router-dom';
 const Footertech = () => {
     return (
         <div className='foot_card'>
-            <div className="card-group bg-primary">
-                <div className="card bg-primary">
-                    <div className="card-body text-center text-white">
+            <div className="card-group">
+                <div className="card">
+                    <div className="card-body mission text-center text-white">
                         <h5 className="card-title">MISION</h5>
                         <p className="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-
                     </div>
                 </div>
-                <div className="card bg-primary">
-                    <div className="card-body text-center text-white">
+                <div className="card ">
+                    <div className="card-body mission text-center text-white">
                         <h5 className="card-title">VISION</h5>
                         <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
 
                     </div>
                 </div>
                 <div className="card bg-primary text-center text-white">
-                    <div className="card-body">
+                    <div className="card-body mission">
                         <h5 className="card-title">QUICK LINKS</h5>
                         <div className="card-text">
                             <ul className="navbar-nav mx-auto mb-2 mb-lg-0 " >
